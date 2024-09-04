@@ -1,0 +1,57 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    overflow: hidden; /* Prevent scrolling on the entire page */
+    font-family: Arial, sans-serif;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Occupy the full viewport height */
+}
+
+main {
+    display: flex;
+    flex: 1;
+}
+
+.content {
+    display: flex;
+    flex: 1;
+    overflow: hidden; /* Prevent scrolling on the content */
+}
+
+.article {
+    background-color: azure;
+    padding: 20px;
+    flex-grow: 1;
+    overflow-y: auto; /* Allow scrolling only within the article */
+}
+
+.sidebar {
+    position: sticky;
+    top: 0;
+    height: 100vh; /* Ensure the sidebar spans the full height */
+    flex-basis: 250px; /* Fixed width for the sidebar */
+}
+
+@media (min-width: 768px) {
+    .content {
+        flex-direction: row;
+    }
+
+    .article {
+        flex: 3;
+    }
+
+    .sidebar {
+        flex: 1;
+    }
+}

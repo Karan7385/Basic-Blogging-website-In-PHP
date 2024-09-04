@@ -1,0 +1,83 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+.container-tut {
+    width: 100%;
+    margin: auto;
+}
+
+.title {
+    text-align: center;
+    font-family: 'Times New Roman', serif;
+    font-size: 2rem;
+}
+
+.search {
+    margin-bottom: 2rem;
+}
+
+.search-hint {
+    display: none;
+}
+
+.row-tut {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-tutorials {
+    /* margin-top: 2rem; */
+    padding: 2rem;
+    border-radius: 1rem;
+    background: linear-gradient(135deg, #AFCBFF, cornflowerblue);
+    color: white;
+    width: 100%;
+    max-width: 60rem;
+}
+
+.post-date {
+    color: black;
+    text-align: right;
+    font-size: 14px;
+}
+
+.card-title-tut {
+    text-align: center;
+    font-size: 2rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    color: #003366;
+}
+
+.card-description-tut {
+    text-align: justify;
+    margin: 0.5rem auto;
+    padding: 1rem;
+    border-radius: 1rem;
+    color: #002D72;
+}
+
+.fakeimg-tut {
+    height: 23rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tutorial-video {
+    width: 90%;
+    height: 100%;
+    border-radius: 0.8rem;
+    border: 2px solid #002D72;
+    padding: 1rem;
+}

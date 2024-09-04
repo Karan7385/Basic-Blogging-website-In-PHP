@@ -1,0 +1,231 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+.article {
+    background: linear-gradient(135deg, #F0F8FF, #D6EAF8);
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: stretch;
+    flex-wrap: wrap;
+    margin: 2rem;
+}
+
+.border {
+    border-radius: 1rem;
+    text-align: center;
+    flex: 1;
+    padding: 1rem;
+    margin: 0.5rem;
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.border:hover {
+    transform: translateY(-0.625rem);
+    color: #FFFFFF;
+}
+
+.top-blogs-custom {
+    background: linear-gradient(to right, #001f3f, #003366);
+    color: #FFD700;
+}
+
+.top-news-custom {
+    background: linear-gradient(to right, #4B0082, #8A2BE2);
+    color: #FFDAB9;
+}
+
+.top-tools-custom {
+    background: linear-gradient(to right, #4169E1, #6495ED);
+    color: #C0C0C0;
+}
+
+.leftcolumn, .rightcolumn {
+    width: 100%;
+    margin: 2rem auto;
+    transition: all 0.3s ease;
+}
+
+.card {
+    background: linear-gradient(135deg, #AFCBFF, cornflowerblue);
+    padding: 2rem;
+    margin: 2rem auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+    border-radius: 0.625rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.card h2 {
+    color: #003366;
+}
+
+.card pre {
+    color: #002D72;
+}
+
+.card h2, .card h5, .card .fakeimg, .card .pre-text {
+    margin: 0;
+}
+
+.card h2 {
+    margin-bottom: 0.5rem;
+}
+
+.card h5 {
+    margin-bottom: 1rem;
+}
+
+.card .pre-text {
+    margin-top: 1rem;
+}
+
+.card:hover {
+    transform: translateY(-0.625rem);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    background: linear-gradient(135deg, skyblue, cornflowerblue);
+}
+
+.fakeimg {
+    width: 100%;
+    height: 30rem;
+    border-radius: 0.625rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+
+.fakeimgRight {
+    width: 100%;
+    height: 10rem;
+    border-radius: 0.625rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.pre-text {
+    text-align: justify;
+    margin: 2rem auto;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.section-title {
+    width: 100%;
+    font-size: xx-large;
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 2rem auto;
+    text-align: center;
+    background: linear-gradient(135deg, cornflowerblue, navy);
+    color: white;
+    border-radius: 0.625rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.8s ease, width 0.5s ease;
+}
+
+.section-title:hover {
+    width: 90%;
+    background: linear-gradient(135deg, skyblue, cornflowerblue);;
+}
+
+@media (min-width: 48rem) {
+    .leftcolumn {
+        width: 70%;
+        float: left;
+    }
+
+    .rightcolumn {
+        width: 28%;
+        float: left;
+        padding-left: 2%;
+    }
+
+    .card {
+        margin-top: 0;
+    }
+}
+
+@media (min-width: 62rem) {
+    .leftcolumn, .rightcolumn {
+        margin-bottom: 0;
+    }
+
+    .border {
+        font-size: 1.2rem;
+    }
+
+    .card {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 48rem) {
+    .border {
+        font-size: 1rem;
+    }
+
+    .card {
+        font-size: 0.9rem;
+    }
+
+    .top-blogs, .top-news, .top-tools {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 30rem) {
+    .border {
+        font-size: 0.9rem;
+    }
+
+    .card {
+        font-size: 0.8rem;
+    }
+
+    .top-blogs, .top-news, .top-tools {
+        font-size: 0.9rem;
+    }
+}

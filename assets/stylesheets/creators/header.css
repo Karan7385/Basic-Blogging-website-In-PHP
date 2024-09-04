@@ -1,0 +1,98 @@
+.header {
+    background-color: #2980B9;
+    padding: 1rem;
+    text-align: center;
+    color: #ECF0F1;
+    border-radius: 5rem;
+    margin: 1rem;
+    box-shadow: 2px 2px 20px #161f3e;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.head .logo img {
+    width: 5rem;
+    border-radius: 50%;
+}
+
+.user-details {
+    display: flex;
+    align-items: center;
+}
+
+.user-details h6 {
+    margin-right: 1rem;
+    color: #ECF0F1;
+}
+
+.user-details img {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+@media (max-width: 50rem) {
+    .head .logo img {
+        width: 5rem;
+        border-radius: 50%;
+    }
+
+    .greetings h2 {
+        font-size: medium;
+        color: #ECF0F1;
+    }
+
+    .user-details img {
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .user-details h6 {
+        display: none;
+    }
+}
+
+@media (max-width: 25rem) {
+    .head .logo img {
+        width: 3rem;
+        border-radius: 50%;
+    }
+
+    .user-details img {
+        display: none;
+    }
+}
+
+@media (min-width: 785px) and (max-width: 945px) {
+    .head .logo img {
+        width: 2rem;
+        border-radius: 50%;
+    }
+
+    .greetings h2 {
+        font-size: medium;
+        color: #ECF0F1;
+    }
+
+    .user-details img {
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .user-details h6 {
+        display: none;
+    }
+}
