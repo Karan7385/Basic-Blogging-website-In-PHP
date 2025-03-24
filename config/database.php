@@ -3,18 +3,18 @@
     class DB_config{
         protected $database = [
             'default' => [
-                "host" => 'localhost',
+                "host" => 'karan9937.c70ug6ww8jjq.eu-north-1.rds.amazonaws.com',
                 "dbname" => 'genai',
-                "username" => 'root',
-                "password" => '',
+                "username" => 'admin',
+                "password" => 'Karan7385256977',
                 "port" => 3306
             ],
 
             'production' => [
-                "host" => 'localhost',
-                "dbname" => 'prod_db_name',
-                "username" => 'prod_username',
-                "password" => 'prod_pass',
+                "host" => 'karan9937.c70ug6ww8jjq.eu-north-1.rds.amazonaws.com',
+                "dbname" => 'genai',
+                "username" => 'admin',
+                "password" => 'Karan7385256977',
                 "port" => 3306
             ]
         ];
